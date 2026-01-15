@@ -976,14 +976,21 @@ body {
 .input-group input:focus,
 .input-group select:focus,
 .email-body-wrapper textarea:focus {
-    outline: none;
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
     border-color: var(--color-primary);
+}
+
+.input-group input:focus:not(:focus-visible),
+.input-group select:focus:not(:focus-visible),
+.email-body-wrapper textarea:focus:not(:focus-visible) {
+    outline: none;
     box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
 }
 
-[data-theme="dark"] .input-group input:focus,
-[data-theme="dark"] .input-group select:focus,
-[data-theme="dark"] .email-body-wrapper textarea:focus {
+[data-theme="dark"] .input-group input:focus:not(:focus-visible),
+[data-theme="dark"] .input-group select:focus:not(:focus-visible),
+[data-theme="dark"] .email-body-wrapper textarea:focus:not(:focus-visible) {
     box-shadow: 0 0 0 3px rgba(144, 205, 244, 0.15);
 }
 
@@ -1107,6 +1114,25 @@ body {
 
 .btn-secondary:hover {
     background: var(--color-border);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Global focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+[data-theme="dark"] a:focus-visible,
+[data-theme="dark"] button:focus-visible,
+[data-theme="dark"] [tabindex]:focus-visible {
+    outline-color: var(--color-primary);
 }
 
 .privacy-note {
@@ -1300,6 +1326,18 @@ body {
     .btn {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
 

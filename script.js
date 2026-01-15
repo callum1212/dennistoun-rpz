@@ -343,11 +343,13 @@ Yours faithfully,
         elements.progressSteps.forEach((el, index) => {
             const stepNum = index + 1;
             el.classList.remove('active', 'completed');
+            el.removeAttribute('aria-current');
 
             if (stepNum < step) {
                 el.classList.add('completed');
             } else if (stepNum === step) {
                 el.classList.add('active');
+                el.setAttribute('aria-current', 'step');
             }
         });
 
