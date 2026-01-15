@@ -21,23 +21,23 @@
             label: 'Glasgow City Council'
         },
         councillors: {
-            to: 'Transportprojects@glasgow.gov.uk',
-            cc: '',
+            to: 'anthony.carroll@glasgow.gov.uk',
+            cc: 'allan.casey@glasgow.gov.uk, elaine.mcdougall@glasgow.gov.uk',
             label: 'Ward Councillors'
         },
         mp: {
-            to: 'Transportprojects@glasgow.gov.uk',
+            to: 'maureen.burke.mp@parliament.uk',
             cc: '',
             label: 'MP - Maureen Burke'
         },
         msps: {
-            to: 'Transportprojects@glasgow.gov.uk',
-            cc: '',
+            to: 'ivan.mckee.msp@parliament.scot',
+            cc: 'john.mason.msp@parliament.scot, pam.duncan-glancy.msp@parliament.scot, paul.sweeney.msp@parliament.scot',
             label: 'MSPs'
         },
         leadership: {
-            to: 'Transportprojects@glasgow.gov.uk',
-            cc: '',
+            to: 'susan.aitken@glasgow.gov.uk',
+            cc: 'angus.millar@glasgow.gov.uk',
             label: 'Council Leadership'
         }
     };
