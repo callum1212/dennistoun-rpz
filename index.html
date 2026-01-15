@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennistoun Parking Proposals | Have Your Say</title>
+    <meta name="description" content="Help Dennistoun residents respond to Glasgow City Council's proposed Restricted Parking Zone. Send your feedback before 18th January 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Decorative top bar -->
+    <div class="top-bar" aria-hidden="true">
+        <div class="top-bar-inner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content container">
+            <div class="logo">
+                <span class="logo-district">Dennistoun</span>
+                <span class="logo-title">Parking Proposals</span>
+            </div>
+            <div class="header-controls">
+                <div class="font-controls" role="group" aria-label="Text size">
+                    <button id="font-small" class="font-btn" aria-label="Small text">A</button>
+                    <button id="font-medium" class="font-btn active" aria-label="Medium text">A</button>
+                    <button id="font-large" class="font-btn" aria-label="Large text">A</button>
+                </div>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <svg class="theme-icon light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="theme-icon dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero / Deadline Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">Public Consultation</div>
+                <h1 class="hero-title">Your Voice Matters</h1>
+                <p class="hero-subtitle">Glasgow City Council is proposing parking controls in Dennistoun. This page helps you respond.</p>
+
+                <div class="deadline-card">
+                    <div class="deadline-icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="deadline-info">
+                        <span class="deadline-label">Consultation closes</span>
+                        <span class="deadline-date">18th January 2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-pattern" aria-hidden="true"></div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-main">
+                        <h2>What This Page Does</h2>
+                        <p>This independent resource helps Dennistoun residents quickly respond to the proposed Restricted Parking Zone. Choose your position, select recipients, and send a personalised email—all in minutes.</p>
+                    </div>
+                    <aside class="intro-callout">
+                        <div class="callout-icon" aria-hidden="true">!</div>
+                        <div class="callout-content">
+                            <strong>Individual emails count</strong>
+                            <p>Unlike petitions where hundreds of signatures count as one response, each personal email is a separate submission.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scheme Overview -->
+        <section class="scheme-section">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-label">The Proposal</span>
+                    <h2>What's Being Proposed?</h2>
+                </header>
+
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-value">8am–10pm</div>
+                        <div class="stat-label">Operating Hours</div>
+                        <div class="stat-detail">7 days a week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">£80–£220</div>
+                        <div class="stat-label">Annual Permit</div>
+                        <div class="stat-detail">Based on emissions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">3 hours</div>
+                        <div class="stat-label">Max Visitor Stay</div>
+                        <div class="stat-detail">Pay & display</div>
+                    </div>
+                </div>
+
+                <!-- Expandable Details -->
+                <div class="details-group">
+                    <details class="detail-panel">
+                        <summary>
+                            <span class="detail-title">Full Permit Pricing</span>
+                            <span class="detail-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="detail-content">
+                            <div class="table-wrapper">
+                                <table class="permit-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Emissions (post-2000)</th>
+                                            <th>Engine Size (pre-2001)</th>
+                                            <th>Annual</th>
+                                            <th>Quarterly</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0–50g/km</td>
+                                            <td>0–500cc</td>
+                                            <td><strong>£80</strong></td>
+                                            <td>£20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>51–150g/km</td>
+                                            <td>501–1500cc</td>
+                                            <td><strong>£150</strong></td>
+                                            <td>£37.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>151–190g/km</td>
+                                            <td>1501–1900cc</td>
+                                            <td><strong>£170</strong></td>
+                                            <td>£42.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>191–225g/km</td>
+                                            <td>1901–2250cc</td>
+                                            <td><strong>£195</strong></td>
+                                            <td>£48.75</td>
+                                        </tr>
+                                        <tr>
+                                            <td>226+g/km</td>
+                                            <td>2251+cc</td>
+                                            <td><strong>£220</strong></td>
+                                            <td>£55</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="detail-panel">
+                        <summary>
+                            <span class="detail-title">Traffic Control Measures</span>
+                            <span class="detail-toggle" aria-hidden="true"></span>
+                        </summary>
+                        <div class="detail-content">
+                            <div class="measures-grid">
+                                <div class="measure-item">
+                                    <h4>Shared Use Spaces</h4>
+                                    <p>For residents, businesses, and visitors. Also allows 3-hour pay & display.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>Pay & Display</h4>
+                                    <p>Short-term parking (max 3 hours) to support local businesses.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>Disabled Bays</h4>
+                                    <p>Dedicated spaces for Blue Badge holders only.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>EV Charging</h4>
+                                    <p>Designated electric vehicle charging points.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>Car Club Bays</h4>
+                                    <p>Reserved for Glasgow car club scheme vehicles.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>Loading Bays</h4>
+                                    <p>For businesses needing loading/unloading access.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>One-Way Streets</h4>
+                                    <p>Some streets may become one-way to improve flow.</p>
+                                </div>
+                                <div class="measure-item">
+                                    <h4>No Waiting</h4>
+                                    <p>Restrictions on main routes for emergency access.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Steps -->
+        <section class="steps-section">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-label">Take Action</span>
+                    <h2>Have Your Say</h2>
+                </header>
+
+                <!-- Progress indicator -->
+                <div class="progress-track" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3">
+                    <div class="progress-step active" data-step="1">
+                        <span class="progress-number">1</span>
+                        <span class="progress-label">Position</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">
+                        <span class="progress-number">2</span>
+                        <span class="progress-label">Recipient</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">
+                        <span class="progress-number">3</span>
+                        <span class="progress-label">Send</span>
+                    </div>
+                </div>
+
+                <!-- Step 1: Position -->
+                <div class="step-panel" id="step-1">
+                    <div class="step-content">
+                        <h3>What's your position on the proposed parking controls?</h3>
+                        <div class="position-cards">
+                            <button class="position-card object" id="position-object" aria-pressed="false">
+                                <div class="position-card-inner">
+                                    <span class="position-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M15 9l-6 6M9 9l6 6"/>
+                                        </svg>
+                                    </span>
+                                    <span class="position-label">I Object</span>
+                                    <span class="position-desc">I have concerns about this scheme</span>
+                                </div>
+                            </button>
+                            <button class="position-card support" id="position-support" aria-pressed="false">
+                                <div class="position-card-inner">
+                                    <span class="position-icon">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M9 12l2 2 4-4"/>
+                                        </svg>
+                                    </span>
+                                    <span class="position-label">I Support</span>
+                                    <span class="position-desc">I think this scheme will help</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Recipients -->
+                <div class="step-panel hidden" id="step-2">
+                    <div class="step-content">
+                        <h3>Who should receive your email?</h3>
+                        <p class="step-hint">Select the recipient for your message</p>
+                        <div class="recipient-cards">
+                            <button class="recipient-card active" data-recipient="council" aria-pressed="true">
+                                <span class="recipient-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6"/>
+                                    </svg>
+                                </span>
+                                <span class="recipient-name">Glasgow City Council</span>
+                                <span class="recipient-desc">Transport Projects Team</span>
+                            </button>
+                            <button class="recipient-card" data-recipient="councillors" aria-pressed="false">
+                                <span class="recipient-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </span>
+                                <span class="recipient-name">Ward Councillors</span>
+                                <span class="recipient-desc">Carroll, Casey, McDougall</span>
+                            </button>
+                            <button class="recipient-card" data-recipient="mp" aria-pressed="false">
+                                <span class="recipient-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                                    </svg>
+                                </span>
+                                <span class="recipient-name">MP</span>
+                                <span class="recipient-desc">Maureen Burke (Labour)</span>
+                            </button>
+                            <button class="recipient-card" data-recipient="msps" aria-pressed="false">
+                                <span class="recipient-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </span>
+                                <span class="recipient-name">MSPs</span>
+                                <span class="recipient-desc">Constituency & Regional</span>
+                            </button>
+                            <button class="recipient-card" data-recipient="leadership" aria-pressed="false">
+                                <span class="recipient-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </span>
+                                <span class="recipient-name">Council Leadership</span>
+                                <span class="recipient-desc">Aitken & Millar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Compose Email -->
+                <div class="step-panel hidden" id="step-3">
+                    <div class="step-content">
+                        <h3>Compose your email</h3>
+
+                        <div class="email-composer">
+                            <div class="composer-inputs">
+                                <div class="input-group">
+                                    <label for="sender-name">Your Name</label>
+                                    <input type="text" id="sender-name" placeholder="Enter your full name">
+                                </div>
+                                <div class="input-group">
+                                    <label for="sender-address">Your Address</label>
+                                    <input type="text" id="sender-address" placeholder="Your Dennistoun address">
+                                </div>
+                                <div class="input-group">
+                                    <label for="template-select">Template</label>
+                                    <div class="select-wrapper">
+                                        <select id="template-select">
+                                            <!-- Populated by JS -->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="email-preview">
+                                <div class="email-header">
+                                    <div class="email-field">
+                                        <span class="field-label">To</span>
+                                        <span class="field-value" id="email-to">Transportprojects@glasgow.gov.uk</span>
+                                    </div>
+                                    <div class="email-field" id="cc-row" style="display: none;">
+                                        <span class="field-label">CC</span>
+                                        <span class="field-value" id="email-cc"></span>
+                                    </div>
+                                    <div class="email-field">
+                                        <span class="field-label">Subject</span>
+                                        <span class="field-value" id="email-subject">Dennistoun RPZ Consultation Response</span>
+                                    </div>
+                                </div>
+                                <div class="email-body-wrapper">
+                                    <label for="email-body" class="visually-hidden">Email Body</label>
+                                    <textarea id="email-body" rows="14"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="composer-actions">
+                                <button id="open-email" class="btn btn-primary">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    Open in Email App
+                                </button>
+                                <button id="copy-email" class="btn btn-secondary">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    Copy to Clipboard
+                                </button>
+                            </div>
+                            <p class="privacy-note">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                                Your information is not stored. This page runs entirely in your browser.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-label">Information</span>
+                    <h2>Common Questions</h2>
+                </header>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>
+                            <span>What is a Restricted Parking Zone (RPZ)?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>An RPZ is an area where parking is controlled through permits and pay & display. Zone entry signs replace conventional double yellow lines. Within the zone, you can only park in marked bays with a valid permit or by paying at a machine.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            <span>How much will a permit cost?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Permit costs are based on your vehicle's CO2 emissions (or engine size for pre-2001 vehicles). Annual permits range from £80 to £220. Quarterly permits range from £20 to £55. Lower-emission vehicles pay less.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            <span>What are the operating hours?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>The proposed scheme would operate from 8am to 10pm, 7 days a week. Outside these hours, parking would be unrestricted.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            <span>Can visitors still park?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes. Visitors can use pay and display spaces for up to 3 hours. Residents can also purchase visitor permits to allow guests to park for longer periods.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            <span>Does my email actually make a difference?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Yes! Each individual email is counted as a separate consultation response. Unlike petitions where hundreds of signatures are counted as just one submission, your personal email carries real weight. The more individual responses, the better the council understands community sentiment.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            <span>Who created this website?</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>This is an independent, resident-created resource to help the Dennistoun community participate in the consultation process. It is not affiliated with, endorsed by, or connected to Glasgow City Council.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="disclaimer">This website is an independent community resource. It is not affiliated with, endorsed by, or connected to Glasgow City Council.</p>
+                <nav class="footer-links">
+                    <a href="https://dennistouncc.org.uk/" target="_blank" rel="noopener">Dennistoun Community Council</a>
+                    <a href="https://www.glasgow.gov.uk/parking" target="_blank" rel="noopener">Glasgow City Council Parking</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
